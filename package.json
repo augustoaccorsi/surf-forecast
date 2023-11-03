@@ -1,0 +1,34 @@
+{
+  "name": "where-to-swell",
+  "version": "1.0.0",
+  "description": "Typescript NodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustoaccorsi/where-to-swell.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typecript",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustoaccorsi/where-to-swell/issues"
+  },
+  "homepage": "https://github.com/augustoaccorsi/where-to-swell#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.3",
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
+}
