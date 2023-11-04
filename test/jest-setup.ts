@@ -6,4 +6,3 @@ beforeAll(() => {
     server.init();
     global.testRequest = supertest(server.getApp());
 });
-
