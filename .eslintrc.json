@@ -8,7 +8,14 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended"
-      ],
+    ],
+
+    "globals": {
+        "module": "readonly",
+        "__dirname": "readonly",
+        "require": "readonly"
+
+    },
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
