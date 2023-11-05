@@ -109,6 +109,8 @@ describe('Forecast Service', () => {
         mockedStormGlassService.fetchPoints.mockRejectedValue(errorMessage);
 
         const forecast = new Forecast(mockedStormGlassService);
-        await expect(forecast.processForecastForBeaches(beaches)).rejects.toThrow(ForecastProcessingInternalError);
+        await expect(forecast.processForecastForBeaches(beaches)).rejects.toThrow(
+            ForecastProcessingInternalError
+        );
     });
 });

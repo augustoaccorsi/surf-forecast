@@ -19,8 +19,8 @@ export interface Beach {
 export interface BeachForecast extends Omit<Beach, 'user'>, ForecastPoint {}
 
 export interface TimeForecast {
-    time: string,
-    forecast: BeachForecast[]
+    time: string;
+    forecast: BeachForecast[];
 }
 
 export class ForecastProcessingInternalError extends InternalError {
@@ -64,7 +64,7 @@ export class Forecast {
         const forecastByTime: TimeForecast[] = [];
 
         for (const forecast of forecasts) {
-            const timePoint = forecastByTime.find(f => f.time === forecast.time);
+            const timePoint = forecastByTime.find((f) => f.time === forecast.time);
             timePoint
                 ? timePoint.forecast.push(forecast)
                 : forecastByTime.push({ time: forecast.time, forecast: [forecast] });
