@@ -26,5 +26,9 @@ describe('User functional tests', () => {
             expect(response.status).toBe(400);
             expect(response.body).toEqual({ error: 'User validation failed: name: Path `name` is required.' });
         });
+
+        it.skip('should return 500 when there is any error other than validation error', async () => {
+            //TODO think in a way to throw a 500
+        });
     });
 });
