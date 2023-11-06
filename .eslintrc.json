@@ -29,7 +29,7 @@
         "eol-last": ["error", "always"],
         "lines-between-class-members": ["error", "always"],
         "keyword-spacing": ["error", {"before": true, "after": true}],
-        "no-console": 2,
+        "no-console": ["error", { "allow": ["info", "error", "warn"] }],
         "no-trailing-spaces": "error"
     }
 }
