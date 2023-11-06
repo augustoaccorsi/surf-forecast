@@ -7,7 +7,7 @@ import { BaseController } from './base';
 const forecast = new Forecast();
 
 @Controller('forecast')
-export class ForecastController extends BaseController{
+export class ForecastController extends BaseController {
     @Get('')
     public async getForecastForLoggedUser(_: Request, res: Response): Promise<void> {
         try {
@@ -15,7 +15,7 @@ export class ForecastController extends BaseController{
             const forecastData = await forecast.processForecastForBeaches(beaches);
             res.status(200).send(forecastData);
         } catch (error) {
-            this.sendCreateUpdateErrorReponse(res, error);
+            this.sendCreateUpdateErrorResponse(res, error);
         }
     }
 }

@@ -4,8 +4,7 @@ import { Request, Response } from 'express';
 import { BaseController } from './base';
 
 @Controller('users')
-export class UsersController extends BaseController{
-
+export class UsersController extends BaseController {
     @Post('/')
     public async create(req: Request, res: Response): Promise<void> {
         try {
@@ -13,7 +12,7 @@ export class UsersController extends BaseController{
             const result = await user.save();
             res.status(201).send(result);
         } catch (error) {
-            this.sendCreateUpdateErrorReponse(res, error);
+            this.sendCreateUpdateErrorResponse(res, error);
         }
     }
 }
