@@ -15,7 +15,7 @@ describe('User functional tests', () => {
             expect(response.body).toEqual(expect.objectContaining(newUser));
         });
 
-        it('should return 400 when there is a validation error', async () => {
+        it('should return 422 when there is a validation error', async () => {
             const newUser = {
                 email:  'mock@mail.com',
                 password: '12345'
@@ -23,8 +23,8 @@ describe('User functional tests', () => {
 
             const response = await global.testRequest.post('/users').send(newUser);
 
-            expect(response.status).toBe(400);
-            expect(response.body).toEqual({ error: 'User validation failed: name: Path `name` is required.' });
+            expect(response.status).toBe(422);
+            expect(response.body).toEqual({ code: 422, error: 'User validation failed: name: Path `name` is required.' });
         });
 
         it.skip('should return 500 when there is any error other than validation error', async () => {
