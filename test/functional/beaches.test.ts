@@ -1,4 +1,4 @@
-import { Beach } from '@src/models/beach';
+import { Beach, BeachPosition } from '@src/models/beach';
 
 describe('Beaches function tests', () => {
     beforeAll(async () => await Beach.deleteMany({}));
@@ -8,7 +8,7 @@ describe('Beaches function tests', () => {
                 lat: -33.792726,
                 lng: 151.289824,
                 name: 'Manly',
-                position: 'E',
+                position: BeachPosition.E,
             };
 
             const response = await global.testRequest.post('/beaches').send(newBeach);
@@ -21,7 +21,7 @@ describe('Beaches function tests', () => {
                 lat: 'invalid_string',
                 lng: 151.289824,
                 name: 'Manly',
-                position: 'E',
+                position: BeachPosition.E,
             };
             const response = await global.testRequest.post('/beaches').send(newBeach);
 
