@@ -1,4 +1,4 @@
-import AuthService from '@src/services/authservices';
+import AuthService from '@src/services/auth';
 import mongoose, { Document, Model } from 'mongoose';
 
 export interface User {
