@@ -1,11 +1,11 @@
 {
-  "name": "where-to-swell",
+  "name": "surf-forecast",
   "version": "1.0.0",
   "description": "Typescript NodeJS API",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/src/index.js",
+    "start": "node dist/src/index.js",
     "start:local": "ts-node-dev --transpile-only src/index.ts",
     "start:dev": "ts-node-dev src/index.ts",
     "lint": "eslint ./src ./test --ext .ts",
@@ -18,11 +18,11 @@
     "fix": "npm run lint:fix && npm run style:fix"
   },
   "engines": {
-    "node": "14"
+    "node": "12"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/augustoaccorsi/where-to-swell.git"
+    "url": "git+https://github.com/augustoaccorsi/surf-forecast.git"
   },
   "keywords": [
     "nodejs",
@@ -32,9 +32,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/augustoaccorsi/where-to-swell/issues"
+    "url": "https://github.com/augustoaccorsi/surf-forecast/issues"
   },
-  "homepage": "https://github.com/augustoaccorsi/where-to-swell#readme",
+  "homepage": "https://github.com/augustoaccorsi/surf-forecast#readme",
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/bcrypt": "^5.0.1",
