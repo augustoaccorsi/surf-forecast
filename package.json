@@ -18,7 +18,7 @@
     "fix": "npm run lint:fix && npm run style:fix"
   },
   "engines": {
-    "node": "12"
+    "node": "14"
   },
   "repository": {
     "type": "git",
