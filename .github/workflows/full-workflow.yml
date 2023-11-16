@@ -49,5 +49,5 @@ jobs:
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: "surf-forecast"
-        heroku_email: "auugsto.acorsi@gmail.com"
+        heroku_email: "augusto.acorsi@gmail.com"
         buildpack: "https://github.com/zidizei/heroku-buildpack-tsc#v2.0"
