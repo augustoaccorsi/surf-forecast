@@ -2,7 +2,7 @@
     "App": {
       "port": "PORT",
       "database": {
-        "mongoUrl": "MONGODB_URL" 
+        "mongoUrl": "MONGODB_URL"
       },
       "resources": {
         "StormGlass": {
