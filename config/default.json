@@ -15,7 +15,7 @@
         "tokenExpiresIn": "20000000"
       },
       "logger": {
-        "enabled": "true",
+        "enabled": true,
         "level": "info"
       }
     }
